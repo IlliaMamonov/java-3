@@ -1,7 +1,13 @@
 class Triangle implements Shape{
-    int area = 133;
+    private int area;
 
-    public Triangle() {}
+    public Triangle() {
+        area = 133;
+    }
+
+    public int getArea(){
+        return this.area;
+    }
 
     @Override
     public void information() {

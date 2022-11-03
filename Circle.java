@@ -1,7 +1,13 @@
 class Circle implements Shape {
-    public int radius = 10;
+    private int radius;
 
-    public Circle() {}
+    public Circle() {
+        radius = 10;
+    }
+
+    public int getRadius(){
+        return this.radius;
+    }
 
     @Override
     public void information(){
