@@ -1,7 +1,7 @@
-abstract class ShapeDecorator implements Shape{
+abstract class ShapeDecoratorBase implements Shape{
     protected String color;
     protected Shape shape;
-    public ShapeDecorator(Shape shape){
+    public ShapeDecoratorBase(Shape shape){
         this.shape = shape;
     }
     public abstract void information();

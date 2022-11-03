@@ -1,5 +1,5 @@
-public class BlackColorShapeDecorator extends ShapeDecorator {
-    public BlackColorShapeDecorator(Shape shape) {
+public class BlackColorShapeDecoratorBase extends ShapeDecoratorBase {
+    public BlackColorShapeDecoratorBase(Shape shape) {
         super(shape);
         this.color = "Black";
     }

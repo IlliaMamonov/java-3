@@ -1,14 +1,14 @@
 public class BlackFactory implements BaseFactory {
     @Override
     public Shape getCircle() {
-        return new BlackColorShapeDecorator(
+        return new BlackColorShapeDecoratorBase(
                 new Circle()
         );
     }
 
     @Override
     public Shape getTriangle() {
-        return new BlackColorShapeDecorator(
+        return new BlackColorShapeDecoratorBase(
                 new Triangle()
         );
     }

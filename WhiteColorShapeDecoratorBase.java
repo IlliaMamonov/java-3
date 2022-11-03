@@ -1,9 +1,8 @@
-public class WhiteColorShapeDecorator extends ShapeDecorator {
-    public WhiteColorShapeDecorator(Shape shape) {
+public class WhiteColorShapeDecoratorBase extends ShapeDecoratorBase {
+    public WhiteColorShapeDecoratorBase(Shape shape) {
         super(shape);
         this.color = "White";
     }
-
 
     @Override
     public void information() {

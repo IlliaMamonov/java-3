@@ -1,14 +1,14 @@
 public class WhiteFactory implements BaseFactory {
     @Override
     public Shape getCircle() {
-        return new WhiteColorShapeDecorator(
+        return new WhiteColorShapeDecoratorBase(
                 new Circle()
         );
     }
 
     @Override
     public Shape getTriangle() {
-        return new WhiteColorShapeDecorator(
+        return new WhiteColorShapeDecoratorBase(
                 new Triangle()
         );
     }
